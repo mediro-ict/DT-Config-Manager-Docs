@@ -5,10 +5,13 @@
 
 Welcome to DT-Config-MAnager-Docs's documentation!
 ==================================================
+Guide:
+^^^^^^
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Contents:
+   :maxdepth: 2
+    license
+    help
 
 
 
