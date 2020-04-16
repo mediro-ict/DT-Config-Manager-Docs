@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'DT-Config-Manager'
-copyright = '2020, Leon Van Zyl'
+copyright = '2020, Mediro-ICT'
 author = 'Leon Van Zyl'
 
 # The full version, including alpha/beta/rc tags
