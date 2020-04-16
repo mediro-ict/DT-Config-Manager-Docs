@@ -1,0 +1,284 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction &mdash; DT-Config-MAnager 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="DT-Config-Manager" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> DT-Config-MAnager
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DT-Config-MAnager</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/intro.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>The main goal for this project is to provide a simple development framework
+that handles the main problems any web application or site encounters.
+It will help you adhere to the DRY (Don’t repeat yourself) principle.</p>
+<p>Keep in mind that it is possible to develop directly on Flask/Jinja2 for custom pages or flows,
+that painlessly integrate with the framework.</p>
+<p>This framework goes further than an admin scaffolding package.
+It has builtin presentation and behaviour alternatives, and you can easily build your own.
+It’s highly configurable, and ships with extra goodies.</p>
+<p>It’s intended to lower errors, bugs and project’s time to deliver.</p>
+<p>This package has some CSS and JS batteries included:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Google charts CSS and JS</p></li>
+<li><p>BootStrap CSS and JS</p></li>
+<li><p>BootsWatch Themes</p></li>
+<li><p>Font-Awesome CSS and Fonts</p></li>
+</ul>
+</div></blockquote>
+<p>– Includes</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>Database</dt><dd><ul>
+<li><p>SQLAlchemy, multiple database support: sqlite, MySQL, ORACLE, MSSQL, DB2 etc.</p></li>
+<li><p>MongoDB, using mongoEngine, still partial support (only normalized).</p></li>
+<li><p>Multiple database connections support (Vertical partitioning).</p></li>
+<li><p>Easy mixin audit to models (created/changed by user, and timestamps).</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Security</dt><dd><ul>
+<li><p>Automatic permissions lookup, based on exposed methods. It will grant all permissions to the Admin Role.</p></li>
+<li><p>Inserts on the Database all the detailed permissions possible on your application.</p></li>
+<li><p>Public (no authentication needed) and Private permissions.</p></li>
+<li><p>Role based permissions.</p></li>
+<li><p>Authentication support for OAuth, OpenID, Database, LDAP and REMOTE_USER environ var.</p></li>
+<li><p>Support for self user registration.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Views and Widgets</dt><dd><ul>
+<li><p>Automatic menu generation.</p></li>
+<li><p>Automatic CRUD generation.</p></li>
+<li><p>Multiple actions on db records.</p></li>
+<li><p>Big variety of filters for your lists.</p></li>
+<li><p>Various view widgets: lists, master-detail, list of thumbnails etc.</p></li>
+<li><p>Select2, Datepicker, DateTimePicker.</p></li>
+<li><p>Select2 related fields.</p></li>
+<li><p>Google charts with automatic group by or direct values and filters.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Forms</dt><dd><ul>
+<li><p>Automatic, Add, Edit and Show from Database Models</p></li>
+<li><p>Labels and descriptions for each field.</p></li>
+<li><p>Automatic base validators from model’s definition.</p></li>
+<li><p>Custom validators, extra fields, custom filters for related dropdown lists.</p></li>
+<li><p>Image and File support for upload and database field association. It will handle everything for you.</p></li>
+<li><p>Field sets for Form’s (Django style).</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>i18n</dt><dd><ul>
+<li><p>Support for multi-language via Babel.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Bootstrap 3.3.1 CSS and js, with Select2 and DatePicker.</p></li>
+<li><p>Font-Awesome icons, for menu icons and actions.</p></li>
+<li><p>Bootswatch Themes.</p></li>
+</ul>
+</div></blockquote>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="DT-Config-Manager" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Leon Van Zyl
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

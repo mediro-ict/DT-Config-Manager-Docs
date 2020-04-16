@@ -1,0 +1,330 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation &mdash; DT-Config-MAnager 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Introduction" href="intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> DT-Config-MAnager
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-pip">Using pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#initialization">Initialization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-requirements">Installation Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python-2-and-3-compatibility">Python 2 and 3 Compatibility</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DT-Config-MAnager</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Installation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/installation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>Installation is straightforward, using the normal python package install.
+I do advise you to additionally install the base skeleton application
+so that you can immediately have a running application (without any models yet) and an easy to grow boilerplate.</p>
+<p>Checkout installation video on <a class="reference external" href="http://youtu.be/xvum4vfwldg">YouTube</a></p>
+<div class="section" id="using-pip">
+<h2>Using pip<a class="headerlink" href="#using-pip" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p><strong>Simple Install</strong></p>
+<blockquote>
+<div><p>You can install the framework simply by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install flask-appbuilder
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Advised Virtual Environment Install</strong></p>
+<blockquote>
+<div><p>Virtual env is highly advisable because the more projects you have,
+the more likely it is that you will be working with
+different versions of Python itself, or at least different versions of Python libraries.
+Let’s face it: quite often libraries break backwards compatibility,
+and it’s unlikely that any serious application will have zero dependencies.
+So what do you do if two or more of your projects have conflicting dependencies?</p>
+<p>If you are on Mac OS X or Linux, chances are that one of the following two commands will work for you:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo easy_install virtualenv
+</pre></div>
+</div>
+<p>or even better:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo pip install virtualenv
+</pre></div>
+</div>
+<p>One of these will probably install virtualenv on your system.
+Maybe it’s even in your package manager. If you use a debian system (like Ubuntu), try:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install python-virtualenv
+</pre></div>
+</div>
+<p>Next create a virtualenv:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ virtualenv venv
+New python executable in venv/bin/python
+Installing distribute............done.
+$ . venv/bin/activate
+(venv)$
+</pre></div>
+</div>
+<p>Now install F.A.B on the virtual env,
+it will install all the dependencies and these will be isolated from your system’s python packages</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(venv)$ pip install flask-appbuilder
+</pre></div>
+</div>
+<p>Once you have virtualenv installed, use <strong>Flask</strong> the command line tool to create your first app.
+So create a skeleton application and the first admin user:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(venv)$ flask fab create-app
+Your new app name: first_app
+Your engine type, SQLAlchemy or MongoEngine [SQLAlchemy]:
+Downloaded the skeleton app, good coding!
+(venv)$ cd first_app
+(venv)$ export FLASK_APP=app
+(venv)$ flask fab create-admin
+Username [admin]:
+User first name [admin]:
+User last name [user]:
+Email [admin@fab.org]:
+Password:
+Repeat for confirmation:
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are two type of skeletons available you can choose from SQLAlchemy default or MongoEngine for
+MongoDB. <strong>To use the MongoEngine skeleton you need to install flask-mongoengine extension.</strong></p>
+</div>
+<p>The framework will immediately insert all possible permissions on the database, these will be associated with
+the <em>Admin</em> role that belongs to the <em>admin</em> user you just created. Your ready to run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(venv)$ flask run
+</pre></div>
+</div>
+<p>This will start a web development server</p>
+<p>You now have a running development server on <a class="reference external" href="http://localhost:8080">http://localhost:8080</a>.</p>
+<p>The skeleton application is not actually needed for you to run AppBuilder, but it’s a good way to start.
+This first application is SQLAlchemy based.</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="initialization">
+<h2>Initialization<a class="headerlink" href="#initialization" title="Permalink to this headline">¶</a></h2>
+<p>When starting your application for the first time,
+all AppBuilder security tables will be created for you.
+All your models can easily be created too (optionally).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since version 1.3.0 no admin user is automatically created, you must use <strong>flask fab cli</strong> to do it.
+There are lot’s of other useful options you can use with <strong>flask fab</strong> like reset user’s password,
+list all your users and views, etc.</p>
+</div>
+</div>
+<div class="section" id="installation-requirements">
+<h2>Installation Requirements<a class="headerlink" href="#installation-requirements" title="Permalink to this headline">¶</a></h2>
+<p>pip installs all the requirements for you.</p>
+<p>Flask App Builder dependes on</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>flask : The web framework, this is what we’re extending.</p></li>
+<li><p>flask-sqlalchemy : DB access (see SQLAlchemy).</p></li>
+<li><p>flask-login : Login, session on flask.</p></li>
+<li><p>flask-openid : Open ID authentication.</p></li>
+<li><p>flask-wtform : Web forms.</p></li>
+<li><p>flask-Babel : For internationalization.</p></li>
+</ul>
+</div></blockquote>
+<p>If you plan to use Image processing or upload, you will need to install PIL:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">pillow</span>
+</pre></div>
+</div>
+<p>or:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">PIL</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="python-2-and-3-compatibility">
+<h2>Python 2 and 3 Compatibility<a class="headerlink" href="#python-2-and-3-compatibility" title="Permalink to this headline">¶</a></h2>
+<p>The framework removed support for python 2 since version 1.13.X</p>
+<p>For version 2.1.1, the minimum supported Python version is 3.6.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="intro.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Leon Van Zyl
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
