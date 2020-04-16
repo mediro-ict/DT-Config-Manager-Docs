@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'DT-Config-MAnager-Docs'
+project = 'DT-Config-MAnager'
 copyright = '2020, Leon Van Zyl'
 author = 'Leon Van Zyl'
 
